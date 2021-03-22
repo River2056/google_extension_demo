@@ -1,3 +1,15 @@
+console.log('contentScript.js entered...');
+document.getElementById('unblockBtn').addEventListener('click', () => {
+    chrome.tabs.query(
+        {active: true, currentWindow: true}, 
+        function(tabs) {
+            chrome.tabs.executeScript({ 
+                code: '$.unblockUI();'
+            });
+        }
+    );
+});
+
 window.onload = () => {
     document.getElementById('loginField').value = '3.13.50';
 }
@@ -13,12 +25,13 @@ document.getElementById('homepageBtn').addEventListener('click', () => {
     );
 });
 
-document.getElementById('homepageBtn180').addEventListener('click', () => {
+// http://223.200.228.113/tps/
+document.getElementById('homepageBtn223').addEventListener('click', () => {
     chrome.tabs.query(
         {active: true, currentWindow: true}, 
         function(tabs) {
             chrome.tabs.executeScript(
-                { code: `location.href = 'http://202.39.47.180/tps'` }
+                { code: `location.href = 'http://223.200.228.113/tps/'` }
             );
         }
     );

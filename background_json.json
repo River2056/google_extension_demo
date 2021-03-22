@@ -1,0 +1,10 @@
+{
+    "background": {
+        "scripts": [
+          "jquery-3.3.1.min.js",
+          "jquery.blockUI.js",
+          "background.js"
+        ],
+        "persistent": false
+      }
+}

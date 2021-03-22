@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body {
+            width: 50rem;
+        }
+    </style>
     <title>Demo Extension</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>3rd Gen</h3>
+                <div class="input-group mt-2 mb-2">
+                    <button id="homepageBtn" class="btn btn-primary mt-1">homepage</button>
+                    <button id="homepageBtn223" class="btn btn-primary mt-1">homepage223</button>
+                </div>
+                <div class="input-group mt-2 mb-2">
+                    <input id="loginField" class="input-group-text" type="text" placeholder="account" />
+                    <button id="loginBtn" class="btn btn-primary mt-1">login</button>
+                </div>
+                <div class="input-group mt-2 mb-2">
+                    <button id="getPriceBtn" class="btn btn-primary mt-1">getPrice</button>
+                    <button id="findPriceBtn" class="btn btn-primary mt-1">findPrice</button>
+                </div>
+                <div class="input-group mt-2 mb-2">
+                    <button id="fileNameBtn" class="btn btn-primary mt-1">fileName</button>
+                    <input id="fileNameField" class="input-group-text" type="text" placeholder="fileName" />
+                </div>
+                <div class="input-group mt-2 mb-2">
+                    <button id="nodejsServerBtn" class="btn btn-primary mt-1">nodejs server ip</button>
+                    <button id="unblockBtn" class="btn btn-primary mt-1">$.unblockUI();</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <h3>2nd Gen</h3>
+                <div class="input-group">
+                    <button id="homepageBtn2" class="btn btn-success mt-1">homepage</button>
+                    <button id="loginBtn2" class="btn btn-success mt-1">login</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row mt-2">
+            
+
+        </div> -->
+        
+    </div>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./jquery.blockUI.js"></script>
+    <script src="./contentScript.js"></script>
 </body>
 </html>
